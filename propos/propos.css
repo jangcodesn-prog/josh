@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  height: 100%; /* important pour le cover */
+}
+header {
+   background: transparent; /* pas de couleur, totalement transparent */
+  position: fixed; /* reste en haut quand tu scroll */
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f5f5f5; 
+}
+.logo img {
+  height: 100px;
+  margin-left: 20px;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.menu ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+}
+.menu li {
+  display: inline;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  background: linear-gradient(rgba(255,100,50,0.4), rgba(50,0,150,0.6));
+  color:  rgb(0, 0, 0);
+  padding: 60px 20px;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  color: #333;
+  font-size: 2.5em;
+}
+
+
+
+.histoire-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.histoire-section img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.histoire-text {
+  width: 50%;
+}
+
+.histoire-text h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.histoire-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .histoire-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .histoire-section img,
+  .histoire-text {
+    width: 100%;
+  }
+}
+
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mission-section img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mission-text {
+  width: 50%;
+}
+
+.mission-text h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.mission-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mission-section img,
+  .mission-text {
+    width: 100%;
+  }
+}
+
+.objectif-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.objectif-section img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.objectif-text {
+  width: 50%;
+}
+
+.objectif-text h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.objectif-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .objectif-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .objectif-section img,
+  .objectif-text {
+    width: 100%;
+  }
+}
+.conclusion {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 40px;
+  color: #333;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer .contenu {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+h4 {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+footer .contact {
+  margin-top: 20px;
+}
+footer .contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+ul {
+  list-style: none; /* enlève les points */
+  padding: 0; /* enlève l’espace par défaut à gauche */
+  margin: 0; /* enlève la marge par défaut */
+}
+
+li {
+  margin: 5px 0; /* petit espace entre les éléments */
+}
+/* FORMULAIRE */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* pour que ça s’adapte au mobile */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  margin-top: 20px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  width: 280px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

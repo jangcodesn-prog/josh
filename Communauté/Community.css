@@ -1,0 +1,229 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin-left: 20px;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.menu ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+}
+.menu li {
+  display: inline;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+.communaute-page {
+    padding: 60px 20px;
+    background: #f9fafb;
+    text-align: center;
+  }
+
+  .communaute-page .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .communaute-page h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+  }
+
+  .communaute-page .intro {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .community-buttons {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+  }
+
+  .telegram { background: #229ED9; }
+  .discord { background: #5865F2; }
+
+  .btn:hover { opacity: 0.9; }
+
+  .community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+
+  .card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .cta-final {
+    margin-top: 40px;
+  }
+
+  .cta-final h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #0f172a;
+  }
+
+  .cta-final .cta {
+    background: #ff7a2d;
+  }
+
+  @media (max-width: 600px) {
+    .communaute-page h1 { font-size: 1.6rem; }
+    .intro { font-size: 1rem; }
+  }
+  footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer .contenu {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+h4 {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+footer .contact {
+  margin-top: 20px;
+}
+footer .contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.whatsapp {
+  background: #25D366; /* vert WhatsApp */
+}
+.newsletter {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.newsletter h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* FORMULAIRE */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* pour que ça s’adapte au mobile */
+}
+
+.newsletter-form input[type="email"] {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  width: 280px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #0056b3;
+}
+.message {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #0f0;
+}
